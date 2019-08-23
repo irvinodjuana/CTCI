@@ -1,5 +1,30 @@
-# Workspace
-.idea/workspace.xml
+# ignore all class files
+*.class
 
-# Output
+# ignore build directory
+build/
+bin/
 out/
+
+# ignore package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# ignore log files
+*.log
+
+# ignore metadata
+Thumbs.db
+.DS_Store
+.git/
+.settings/
+.buildpath
+.classpath
+.project
+.idea/
+vcs.xml
+*.iml
