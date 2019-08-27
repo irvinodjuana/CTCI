@@ -23,6 +23,6 @@ public class Question2_2 {
         LinkedList newList = new LinkedList(arr);
         System.out.println(newList);
         System.out.println(returnKthToLast(newList, 3)); // expect: 5
-        System.out.println(returnKthToLast(newList, 6));
+        System.out.println(returnKthToLast(newList, 6)); // expect: 8
     }
 }
