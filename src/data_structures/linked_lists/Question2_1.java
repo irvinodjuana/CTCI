@@ -1,5 +1,4 @@
 package data_structures.linked_lists;
-import data_structures.linked_lists.Node;
 import java.util.HashSet;
 
 public class Question2_1 {
