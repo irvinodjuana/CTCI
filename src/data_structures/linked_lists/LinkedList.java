@@ -23,16 +23,15 @@ class LinkedList {
 
     public String toString() {
         StringBuilder str = new StringBuilder();
-        str.append("[");
         str.append(this.head.data);
         Node n = this.head.next;
 
         while (n != null) {
-            str.append(", ");
+            str.append(" -> ");
             str.append(n.data);
             n = n.next;
         }
-        str.append("]");
+
         return str.toString();
     }
 
