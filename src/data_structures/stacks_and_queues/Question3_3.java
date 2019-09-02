@@ -2,7 +2,6 @@ package data_structures.stacks_and_queues;
 
 import java.util.ArrayList;
 import java.util.EmptyStackException;
-import java.util.Set;
 
 public class Question3_3 {
 
