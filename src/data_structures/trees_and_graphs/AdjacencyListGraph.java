@@ -4,43 +4,42 @@ import java.util.ArrayList;
 
 public class AdjacencyListGraph implements Graph {
     // Directional Graph Datatype implemented with adjacency list
-    public ArrayList<GraphNode> nodes;
+    private ArrayList<GraphNode> nodes;
 
-    public boolean addVertex(GraphNode n) {
+    public void addVertex(GraphNode n) {
         if (!nodes.contains(n)) {
             nodes.add(n);
-            return true;
         }
-        return false;
     }
 
-    public boolean addEdge(GraphNode from, GraphNode to) {
-        return from.addNeighbour(to);
+    public void addEdge(GraphNode from, GraphNode to) {
+        from.addNeighbour(to);
     }
 
-    public boolean addDoubleEdge(GraphNode n1, GraphNode n2) {
-        return n1.addNeighbour(n2) || n2.addNeighbour(n1);
+    public void addDoubleEdge(GraphNode n1, GraphNode n2) {
+        n1.addNeighbour(n2);
+        n2.addNeighbour(n1);
     }
 
-
+    public ArrayList<GraphNode> getNodes() {
+        return this.nodes;
+    }
 
 }
 
 class GraphNode {
-    String name;
+    int val;
     ArrayList<GraphNode> neighbours;
 
-    public GraphNode(String name) {
-        this.name = name;
+    public GraphNode(int val) {
+        this.val = val;
+        this.neighbours = new ArrayList<>();
     }
 
-    public boolean addNeighbour(GraphNode n) {
+    public void addNeighbour(GraphNode n) {
         if (!neighbours.contains(n)) {
             neighbours.add(n);
-            return true;
         }
-
-        return false;
     }
 }
 
