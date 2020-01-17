@@ -2,11 +2,11 @@ package data_structures.trees_and_graphs;
 
 import java.util.ArrayList;
 
-public class TreeNode {
+public class MyTreeNode {
     public String data;
-    public ArrayList<TreeNode> children;
+    public ArrayList<MyTreeNode> children;
 
-    public TreeNode(String data) {
+    public MyTreeNode(String data) {
         this.data = data;
     }
 }
