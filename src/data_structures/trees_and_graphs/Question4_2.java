@@ -23,9 +23,9 @@ public class Question4_2 {
     }
 
     public static void main(String[] args) {
-        int[] arr = {0, 1, 2, 3, 4, 5, 6, 7};
+        int[] arr = {0, 1, 2, 3, 4, 5, 6, 7, 8};
         BinaryTreeNode tree = minimalTree(arr);
-
+        System.out.println(tree);
         System.out.println(height(tree));
 
     }
