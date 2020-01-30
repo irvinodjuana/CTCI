@@ -7,12 +7,18 @@ public class Question4_3 {
             return Math.max(height(root.left), height(root.right)) + 1;
         return -1;
     }
+
+    /** 
+     * List of Depths method: returns a array of linkedlists containing
+     * all binary tree nodes at each depth
+     * O(n)
+     */
     public static ListNode[] listOfDepths(BinaryTreeNode root) {
-        int ht = height(root);
+        int ht = height(root); // O(n)
         ListNode[] heads = new ListNode[ht + 1];
         ListNode[] tails = new ListNode[ht + 1];
 
-        DFS(root, 0, heads, tails);
+        DFS(root, 0, heads, tails); // O(n)
         return heads;
     }
 
@@ -31,6 +37,7 @@ public class Question4_3 {
         DFS(root.right, depth+1, heads, tails);
     }
 
+    // Test code
     public static void main(String[] args) {
         BinaryTreeNode[] nodes = new BinaryTreeNode[13];
         for (int i = 0; i < nodes.length; i++)
