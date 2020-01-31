@@ -60,5 +60,8 @@ public class Question4_4 {
 
         System.out.println("Balanced tree is balanced? " + checkBalanced(nodes[7]));
         System.out.println("Unbalanced tree is balanced? " + checkBalanced(nodes[0]));
+        System.out.println("Minimally Unbalanced tree is balanced? " + checkBalanced(nodes[3]));
+        System.out.println("Null tree is balanced? " + checkBalanced(null));
+        System.out.println("Leaf node is balanced? " + checkBalanced(nodes[8]));
     }
 }
