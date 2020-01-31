@@ -18,5 +18,11 @@ class BinaryTreeNode {
 
     public BinaryTreeNode(int data) {
         this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+
+    public String toString() {
+        return "{" + this.data + ", L: " + this.left + ", R: " + this.right + "}";
     }
 }

@@ -1,3 +1,5 @@
+package data_structures.trees_and_graphs;
+
 import java.util.ArrayList;
 import java.lang.Math;
 
@@ -69,21 +71,21 @@ public class Question4_3 {
     }
 }
 
-class BinaryTreeNode {
-    public int data;
-    public BinaryTreeNode left;
-    public BinaryTreeNode right;
+// class BinaryTreeNode {
+//     public int data;
+//     public BinaryTreeNode left;
+//     public BinaryTreeNode right;
 
-    public BinaryTreeNode(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
+//     public BinaryTreeNode(int data) {
+//         this.data = data;
+//         this.left = null;
+//         this.right = null;
+//     }
 
-    public String toString() {
-        return "{" + this.data + ", L: " + this.left + ", R: " + this.right + "}";
-    }
-}
+//     public String toString() {
+//         return "{" + this.data + ", L: " + this.left + ", R: " + this.right + "}";
+//     }
+// }
 
 
 class ListNode {
