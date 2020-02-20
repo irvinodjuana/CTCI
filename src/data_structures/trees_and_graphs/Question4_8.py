@@ -19,21 +19,21 @@ class Question4_8:
         # (2 = n2 found in branch)
         # (4 = FCA found in branch)
         if root == n1:
-            if code == 2:
+            if code == 2:       # n1 anc. of n2
                 return 4, n1
             return 1, None
         
         elif root == n2:
-            if code == 1:
+            if code == 1:       # n2 anc. of n1
                 return 4, n2
             return 2, None
         
         else:
-            if code == 4:
+            if code == 4:       # parent in branch
                 if res1 is not None:
                     return 4, res1
                 return 4, res2
-            elif code == 3:
+            elif code == 3:     # current node is FCA
                 return 4, root
             else:
                 return code, None
